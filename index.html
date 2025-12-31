@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- CONFIGURACIÓN -->
+    <meta charset="UTF-8">
+    <title>Mi primera página</title>
+
+    <!-- CONEXIÓN AL CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- CONTENIDO VISIBLE -->
+
+    <div class="contenedor">
+        <img src="foto.jpg" alt="Foto de Karely" class="perfil">
+
+        <h1>Bienvenidos a mi primera página web</h1>
+
+        <h2>Soy Karely 💖</h2>
+        <p>Estudiante y futura desarrolladora de software 🚀</p>
+
+        <p id="mensaje">Estoy aprendiendo desarrollo web y me encanta 💖</p>
+
+        <button onclick="saludar()">Presióname</button>
+        <button onclick="modoOscuro()">Modo oscuro 🌙</button>
+
+        <button onclick="cambiarMensaje()" id="botonMensaje">
+            Cambiar mensaje ✨
+        </button>
+
+        <button onclick="cambiarTema()" id="botonTema">
+            Cambiar tema 🌈
+        </button>
+    </div>
+
+    <!-- CONEXIÓN AL JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>
