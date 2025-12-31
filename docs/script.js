@@ -103,3 +103,4 @@ function cambiarMensaje() {
     cambiado = !cambiado;
     animarMensaje();
 }
+
