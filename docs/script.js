@@ -27,21 +27,6 @@ function modoOscuro() {
 
 // Cambiar color de fondo
 function cambiarColor() {
-    const colores = [
-        "#fce4ec",
-        "#e3f2fd",
-        "#f3e5f5",
-        "#e8f5e9",
-        "#fffde7",
-        "#ede7f6"
-    ];
-
-    const aleatorio = Math.floor(Math.random() * colores.length);
-
-    // Cambiamos el color del CONTENEDOR
     const contenedor = document.querySelector(".contenedor");
-    contenedor.style.backgroundColor = colores[aleatorio];
+    contenedor.classList.toggle("color-magico");
 }
-
-
-
