@@ -39,22 +39,7 @@ window.addEventListener("load", () => {
         img.style.animation = "";
     });
 });
-// Animación al hacer scroll
-const elementos = document.querySelectorAll(".scroll");
 
-function mostrarScroll() {
-    elementos.forEach(el => {
-        const posicion = el.getBoundingClientRect().top;
-        const pantalla = window.innerHeight / 1.2;
-
-        if (posicion < pantalla) {
-            el.classList.add("visible");
-        }
-    });
-}
-
-window.addEventListener("scroll", mostrarScroll);
-mostrarScroll();
 // ===== EFECTO SCROLL =====
 const elementosScroll = document.querySelectorAll(".scroll");
 
@@ -71,6 +56,7 @@ function mostrarAlScroll() {
 
 window.addEventListener("scroll", mostrarAlScroll);
 window.addEventListener("load", mostrarAlScroll);
+
 
 
 
