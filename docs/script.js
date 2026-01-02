@@ -71,11 +71,8 @@ function mostrarAlScroll() {
 
 window.addEventListener("scroll", mostrarAlScroll);
 window.addEventListener("load", mostrarAlScroll);
-/* ===== COLOR MÁGICO ===== */
-.color-magico {
-    background: linear-gradient(135deg, #fce4ec, #e3f2fd, #f3e5f5);
-    transition: background 0.6s ease;
-}
+
+
 
 
 
