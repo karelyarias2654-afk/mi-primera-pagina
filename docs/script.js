@@ -30,3 +30,13 @@ function cambiarColor() {
     const contenedor = document.querySelector(".contenedor");
     contenedor.classList.toggle("color-magico");
 }
+// Reinicia animación de galería
+window.addEventListener("load", () => {
+    const imgs = document.querySelectorAll(".galeria img");
+    imgs.forEach(img => {
+        img.style.animation = "none";
+        img.offsetHeight; // truco para reiniciar
+        img.style.animation = "";
+    });
+});
+
