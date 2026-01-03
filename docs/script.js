@@ -1,10 +1,10 @@
 // ===== MENSAJES =====
 const mensajes = [
-    "✨ Estoy programando mi primera página web ✨",
-    "💖 Amo aprender desarrollo web",
-    "🚀 Voy a ser desarrolladora de software",
-    "🧠 Programar es como resolver acertijos",
-    "🌈 Cada día aprendo algo nuevo"
+    "🚗 Carritos de juguete de excelente calidad",
+    "🎁 Ideales para regalo y colección",
+    "✨ Modelos llamativos y resistentes",
+    "👦👧 Diversión garantizada para niños",
+    "📲 Pregunta por precio y disponibilidad"
 ];
 
 let indice = 0;
@@ -56,6 +56,7 @@ function mostrarAlScroll() {
 
 window.addEventListener("scroll", mostrarAlScroll);
 window.addEventListener("load", mostrarAlScroll);
+
 
 
 
