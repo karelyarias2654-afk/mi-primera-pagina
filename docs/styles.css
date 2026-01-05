@@ -308,6 +308,18 @@ button:active {
     overflow: visible;
 }
 
+/* ===== GALERÍA EN UNA SOLA COLUMNA EN CELULAR ===== */
+@media (max-width: 600px) {
+    .galeria {
+        grid-template-columns: 1fr; /* 👈 una sola imagen por fila */
+    }
+
+    .galeria img {
+        max-height: 260px; /* se ven más grandes */
+    }
+}
+
+
 
 
 
