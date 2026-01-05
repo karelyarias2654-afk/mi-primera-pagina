@@ -319,6 +319,26 @@ button:active {
     }
 }
 
+/* ===== FORZAR UNA SOLA COLUMNA EN CELULAR ===== */
+@media screen and (max-width: 768px) {
+    .galeria {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .galeria img {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+        object-fit: contain;
+    }
+}
+
 
 
 
