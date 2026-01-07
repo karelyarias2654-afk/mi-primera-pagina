@@ -57,6 +57,17 @@ function mostrarAlScroll() {
 window.addEventListener("scroll", mostrarAlScroll);
 window.addEventListener("load", mostrarAlScroll);
 
+// ===== AUDIO AL HACER CLICK EN LA PÁGINA =====
+let audioReproducido = false;
+
+document.addEventListener("click", () => {
+    if (!audioReproducido) {
+        const audio = document.getElementById("audioCarro");
+        audio.play();
+        audioReproducido = true;
+    }
+});
+
 
 
 
