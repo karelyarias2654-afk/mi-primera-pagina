@@ -58,15 +58,14 @@ window.addEventListener("scroll", mostrarAlScroll);
 window.addEventListener("load", mostrarAlScroll);
 
 // ===== AUDIO AL HACER CLICK EN LA PÁGINA =====
-let audioReproducido = false;
+const audio = document.getElementById("audioMotor");
 
 document.addEventListener("click", () => {
-    if (!audioReproducido) {
-        const audio = document.getElementById("audioCarro");
-        audio.play();
-        audioReproducido = true;
-    }
+  audio.currentTime = 0; // reinicia el audio
+  audio.play();
 });
+
+
 
 
 
