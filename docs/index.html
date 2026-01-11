@@ -1,224 +1,230 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- ============================= -->
+    <!-- CONFIGURACIÓN BÁSICA          -->
+    <!-- ============================= -->
     <meta charset="UTF-8">
-    <title>Mi tiendita de carritos</title>
+    <title>Mi Tiendita de Carritos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- ============================= -->
+    <!-- ESTILOS CSS                   -->
+    <!-- ============================= -->
     <link rel="stylesheet" href="styles.css">
 </head>
-    
+
 <body>
-    <!-- AUDIO DE CARRITOS -->
-<audio id="audioMotor">
-  <source src="motor.mp3" type="audio/mpeg">
-</audio>
 
-  <div class="contenedor">
+    <!-- ============================= -->
+    <!-- AUDIO DE MOTOR (CLICK)        -->
+    <!-- ============================= -->
+    <audio id="audioMotor">
+        <source src="motor.mp3" type="audio/mpeg">
+    </audio>
 
-  <h1 class="scroll">Mi tiendita de carritos 🚗✨</h1>
+    <!-- ============================= -->
+    <!-- CONTENEDOR PRINCIPAL          -->
+    <!-- ============================= -->
+    <div class="contenedor">
 
-<h2 class="scroll">Diversión, colección y calidad</h2>
+        <!-- TÍTULO PRINCIPAL -->
+        <h1 class="scroll">Mi Tiendita de Carritos 🚗✨</h1>
 
-<p class="scroll">
-    Carritos de juguete ideales para niños y coleccionistas.
-</p>
+        <!-- SUBTÍTULO -->
+        <h2 class="scroll">Diversión, colección y calidad</h2>
 
-    <p id="mensaje" class="scroll">
-    Pregunta por nuestros modelos disponibles 🚗
-</p>
+        <!-- DESCRIPCIÓN -->
+        <p class="scroll">
+            Carritos de juguete ideales para niños y coleccionistas.
+        </p>
 
-          <!-- BOTONES -->
-    <button onclick="saludar()">Presióname</button>
-    <button onclick="modoOscuro()">Modo oscuro 🌙</button>
-    <button onclick="cambiarColor()">Cambiar color 🎨</button>
+        <!-- MENSAJE DINÁMICO -->
+        <p id="mensaje" class="scroll">
+            Pregunta por nuestros modelos disponibles 🚗
+        </p>
 
-      <section class="seccion">
-  <h2 class="titulo-seccion">🟢 Carritos Chicos – $250</h2>
+        <!-- ============================= -->
+        <!-- BOTONES DE INTERACCIÓN       -->
+        <!-- ============================= -->
+        <div class="botones">
+            <button onclick="saludar()">Cambiar mensaje</button>
+            <button onclick="modoOscuro()">Modo oscuro 🌙</button>
+            <button onclick="cambiarColor()">Color mágico 🎨</button>
+        </div>
 
-  <div class="galeria">
-    
-    <!-- CARD 1 -->
-    <div class="card">
-      <img src="carrito1.jpeg" class="zoom">
-      <h3 class="nombre">Mazda</h3>
-      <p class="precio">$250</p>
-      <a class="btn-whatsapp" href="https://wa.me/523333066661?text=Hola,%20me%20interesa%20el%20Mazda%20(Tamaño%20Chico)%20por%20$250%20🚗" target="_blank">
-Pedir por WhatsApp
-</a>
+        <!-- ============================= -->
+        <!-- SECCIÓN: CARRITOS CHICOS     -->
+        <!-- ============================= -->
+        <section class="seccion">
+            <h2 class="titulo-seccion">🟢 Carritos Chicos – $250</h2>
+
+            <div class="galeria">
+
+                <!-- CARD -->
+                <div class="card">
+                    <img src="carrito1.jpeg" alt="Mazda" class="zoom">
+                    <h3 class="nombre">Mazda</h3>
+                    <p class="precio">$250</p>
+                    <a class="btn-whatsapp"
+                       href="https://wa.me/523333066661?text=Hola,%20me%20interesa%20el%20Mazda%20(Tamaño%20Chico)%20por%20$250%20🚗"
+                       target="_blank">
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+
+                <div class="card">
+                    <img src="carrito2.jpeg" alt="Nissan Skyline" class="zoom">
+                    <h3 class="nombre">Nissan Skyline</h3>
+                    <p class="precio">$250</p>
+                    <a class="btn-whatsapp"
+                       href="https://wa.me/523333066661?text=Hola,%20me%20interesa%20el%20Nissan%20Skyline%20(Tamaño%20Chico)%20por%20$250%20🚗"
+                       target="_blank">
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+
+                <div class="card">
+                    <img src="carrito3.jpeg" alt="Mitsubishi" class="zoom">
+                    <h3 class="nombre">Mitsubishi</h3>
+                    <p class="precio">$250</p>
+                    <a class="btn-whatsapp"
+                       href="https://wa.me/523333066661?text=Hola,%20me%20interesa%20el%20Mitsubishi%20(Tamaño%20Chico)%20por%20$250%20🚗"
+                       target="_blank">
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+
+                <div class="card">
+                    <img src="carrito4.jpeg" alt="Toyota Supra" class="zoom">
+                    <h3 class="nombre">Toyota Supra</h3>
+                    <p class="precio">$250</p>
+                    <a class="btn-whatsapp"
+                       href="https://wa.me/523333066661?text=Hola,%20me%20interesa%20el%20Toyota%20Supra%20(Tamaño%20Chico)%20por%20$250%20🚗"
+                       target="_blank">
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============================= -->
+        <!-- SECCIÓN: CARRITOS MEDIANOS   -->
+        <!-- ============================= -->
+        <section class="seccion">
+            <h2 class="titulo-seccion">🟡 Carritos Medianos – $550</h2>
+
+            <div class="galeria">
+
+                <div class="card">
+                    <img src="mediano1.jpeg" alt="Camioneta Ford" class="zoom">
+                    <h3 class="nombre">Camioneta Ford</h3>
+                    <p class="precio">$550</p>
+                    <a class="btn-whatsapp"
+                       href="https://wa.me/523333066661?text=Hola,%20me%20interesa%20la%20Camioneta%20Ford%20(Tamaño%20Mediano)%20por%20$550%20🚗"
+                       target="_blank">
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+
+                <div class="card">
+                    <img src="mediano2.jpeg" alt="Pick Up" class="zoom">
+                    <h3 class="nombre">Pick Up</h3>
+                    <p class="precio">$550</p>
+                    <a class="btn-whatsapp"
+                       href="https://wa.me/523333066661?text=Hola,%20me%20interesa%20la%20Pick%20Up%20(Tamaño%20Mediano)%20por%20$550%20🚗"
+                       target="_blank">
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+
+                <div class="card">
+                    <img src="mediano3.jpeg" alt="Honda" class="zoom">
+                    <h3 class="nombre">Honda</h3>
+                    <p class="precio">$550</p>
+                    <a class="btn-whatsapp"
+                       href="https://wa.me/523333066661?text=Hola,%20me%20interesa%20el%20Honda%20(Tamaño%20Mediano)%20por%20$550%20🚗"
+                       target="_blank">
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+
+                <div class="card">
+                    <img src="mediano4.jpeg" alt="Corvette" class="zoom">
+                    <h3 class="nombre">Corvette</h3>
+                    <p class="precio">$550</p>
+                    <a class="btn-whatsapp"
+                       href="https://wa.me/523333066661?text=Hola,%20me%20interesa%20el%20Corvette%20(Tamaño%20Mediano)%20por%20$550%20🚗"
+                       target="_blank">
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============================= -->
+        <!-- SECCIÓN: CARRITOS GRANDES    -->
+        <!-- ============================= -->
+        <section class="seccion">
+            <h2 class="titulo-seccion">🔵 Carritos Grandes – $650</h2>
+
+            <div class="galeria">
+
+                <div class="card">
+                    <img src="grande1.jpeg" alt="Impala" class="zoom">
+                    <h3 class="nombre">Impala</h3>
+                    <p class="precio">$650</p>
+                    <a class="btn-whatsapp"
+                       href="https://wa.me/523333066661?text=Hola,%20me%20interesa%20el%20Impala%20(Tamaño%20Grande)%20por%20$650%20🚗"
+                       target="_blank">
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+
+                <div class="card">
+                    <img src="grande2.jpeg" alt="Nissan Ben Sopra" class="zoom">
+                    <h3 class="nombre">Nissan Ben Sopra</h3>
+                    <p class="precio">$650</p>
+                    <a class="btn-whatsapp"
+                       href="https://wa.me/523333066661?text=Hola,%20me%20interesa%20el%20Nissan%20Ben%20Sopra%20(Tamaño%20Grande)%20por%20$650%20🚗"
+                       target="_blank">
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+
+                <div class="card">
+                    <img src="grande3.jpeg" alt="Mazda RX7" class="zoom">
+                    <h3 class="nombre">Mazda RX7</h3>
+                    <p class="precio">$650</p>
+                    <a class="btn-whatsapp"
+                       href="https://wa.me/523333066661?text=Hola,%20me%20interesa%20el%20Mazda%20RX7%20(Tamaño%20Grande)%20por%20$650%20🚗"
+                       target="_blank">
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+
+                <div class="card">
+                    <img src="grande4.jpeg" alt="Chevy Camaro" class="zoom">
+                    <h3 class="nombre">Chevy Camaro</h3>
+                    <p class="precio">$650</p>
+                    <a class="btn-whatsapp"
+                       href="https://wa.me/523333066661?text=Hola,%20me%20interesa%20el%20Chevy%20Camaro%20(Tamaño%20Grande)%20por%20$650%20🚗"
+                       target="_blank">
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+
+            </div>
+        </section>
 
     </div>
 
-    <!-- CARD 2 -->
-    <div class="card">
-      <img src="carrito2.jpeg" class="zoom">
-      <h3 class="nombre">Nissan Skyline</h3>
-      <p class="precio">$250</p>
- <a class="btn-whatsapp" href="https://wa.me/523333066661?text=Hola,%20me%20interesa%20el%20Nissan%20Skyline%20(Tamaño%20Chico)%20por%20$250%20🚗" target="_blank">
-Pedir por WhatsApp
-</a>
-
-    </div>
-
-    <!-- CARD 3 -->
-    <div class="card">
-      <img src="carrito3.jpeg" class="zoom">
-      <h3 class="nombre">Mitsubishi</h3>
-      <p class="precio">$250</p>
-<a class="btn-whatsapp" href="https://wa.me/523333066661?text=Hola,%20me%20interesa%20el%20Mitsubishi%20(Tamaño%20Chico)%20por%20$250%20🚗" target="_blank">
-Pedir por WhatsApp
-</a>
-
-    </div>
-
-    <!-- CARD 4 -->
-    <div class="card">
-      <img src="carrito4.jpeg" class="zoom">
-      <h3 class="nombre">Toyota Supra</h3>
-      <p class="precio">$250</p>
-<a class="btn-whatsapp" href="https://wa.me/523333066661?text=Hola,%20me%20interesa%20el%20Toyota%20Supra%20(Tamaño%20Chico)%20por%20$250%20🚗" target="_blank">
-Pedir por WhatsApp
-</a>
-
-    </div>
-
-  </div>
-</section>
-
-<section class="seccion">
-  <h2 class="titulo-seccion">🟡 Carritos Medianos – $550</h2>
-
-  <div class="galeria">
-
-    <div class="card">
-      <img src="mediano1.jpeg" class="zoom">
-      <h3 class="nombre">Camioneta Ford</h3>
-      <p class="precio">$550</p>
-      <a class="btn-whatsapp"
-         href="https://wa.me/523333066661?text=Hola,%20me%20interesa%20la%20Camioneta%20Ford%20(Tamaño%20Mediano)%20por%20$550%20🚗"
-         target="_blank">
-        Pedir por WhatsApp
-      </a>
-    </div>
-
-    <div class="card">
-      <img src="mediano2.jpeg" class="zoom">
-      <h3 class="nombre">Pick Up</h3>
-      <p class="precio">$550</p>
-      <a class="btn-whatsapp"
-         href="https://wa.me/523333066661?text=Hola,%20me%20interesa%20la%20Pick%20Up%20(Tamaño%20Mediano)%20por%20$550%20🚗"
-         target="_blank">
-        Pedir por WhatsApp
-      </a>
-    </div>
-
-    <div class="card">
-      <img src="mediano3.jpeg" class="zoom">
-      <h3 class="nombre">Honda</h3>
-      <p class="precio">$550</p>
-      <a class="btn-whatsapp"
-         href="https://wa.me/523333066661?text=Hola,%20me%20interesa%20el%20Honda%20(Tamaño%20Mediano)%20por%20$550%20🚗"
-         target="_blank">
-        Pedir por WhatsApp
-      </a>
-    </div>
-
-    <div class="card">
-      <img src="mediano4.jpeg" class="zoom">
-      <h3 class="nombre">Corvette</h3>
-      <p class="precio">$550</p>
-      <a class="btn-whatsapp"
-         href="https://wa.me/523333066661?text=Hola,%20me%20interesa%20el%20Corvette%20(Tamaño%20Mediano)%20por%20$550%20🚗"
-         target="_blank">
-        Pedir por WhatsApp
-      </a>
-    </div>
-
-  </div>
-</section>
-
-<section class="seccion">
-  <h2 class="titulo-seccion">🔵 Carritos Grandes – $650</h2>
-
-  <div class="galeria">
-
-    <div class="card">
-      <img src="grande1.jpeg" class="zoom">
-      <h3 class="nombre">Impala</h3>
-      <p class="precio">$650</p>
-      <a class="btn-whatsapp"
-         href="https://wa.me/523333066661?text=Hola,%20me%20interesa%20el%20Impala%20(Tamaño%20Grande)%20por%20$650%20🚗"
-         target="_blank">
-        Pedir por WhatsApp
-      </a>
-    </div>
-
-    <div class="card">
-      <img src="grande2.jpeg" class="zoom">
-      <h3 class="nombre">Nissan Ben Sopra</h3>
-      <p class="precio">$650</p>
-      <a class="btn-whatsapp"
-         href="https://wa.me/523333066661?text=Hola,%20me%20interesa%20el%20Nissan%20Ben%20Sopra%20(Tamaño%20Grande)%20por%20$650%20🚗"
-         target="_blank">
-        Pedir por WhatsApp
-      </a>
-    </div>
-
-    <div class="card">
-      <img src="grande3.jpeg" class="zoom">
-      <h3 class="nombre">Mazda RX7</h3>
-      <p class="precio">$650</p>
-      <a class="btn-whatsapp"
-         href="https://wa.me/523333066661?text=Hola,%20me%20interesa%20el%20Mazda%20RX7%20(Tamaño%20Grande)%20por%20$650%20🚗"
-         target="_blank">
-        Pedir por WhatsApp
-      </a>
-    </div>
-
-    <div class="card">
-      <img src="grande4.jpeg" class="zoom">
-      <h3 class="nombre">Chevy Camaro</h3>
-      <p class="precio">$650</p>
-      <a class="btn-whatsapp"
-         href="https://wa.me/523333066661?text=Hola,%20me%20interesa%20el%20Chevy%20Camaro%20(Tamaño%20Grande)%20por%20$650%20🚗"
-         target="_blank">
-        Pedir por WhatsApp
-      </a>
-    </div>
-
-  </div>
-</section>
- 
+    <!-- ============================= -->
+    <!-- JAVASCRIPT                   -->
+    <!-- ============================= -->
     <script src="script.js"></script>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
