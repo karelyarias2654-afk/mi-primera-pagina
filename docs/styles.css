@@ -78,6 +78,12 @@ button:active {
     }
 }
 
+.contenedor:hover {
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    transform: translateY(-2px);
+    transition: all 0.4s ease;
+}
+
 /* ========================================= */
 /*           SECCIONES DE PRODUCTOS           */
 /* ========================================= */
@@ -366,6 +372,20 @@ button:active {
 
 .whatsapp-float:hover {
     transform: scale(1.15);
+}
+
+/* =============================== */
+/* MICRO INTERACCIONES GLOBALES ✨ */
+/* =============================== */
+
+button, .card, .btn-whatsapp {
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:active,
+.card:active,
+.btn-whatsapp:active {
+    transform: scale(0.97);
 }
 
 
