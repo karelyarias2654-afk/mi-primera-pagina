@@ -87,3 +87,24 @@ window.addEventListener("DOMContentLoaded", () => {
     audio.play();
   });
 });
+
+/* =============================== */
+/* ANIMACIÓN AL HACER SCROLL ✨ */
+/* =============================== */
+
+const elementosScroll = document.querySelectorAll('.scroll');
+
+const mostrarScroll = () => {
+    const trigger = window.innerHeight * 0.85;
+
+    elementosScroll.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+
+        if (top < trigger) {
+            el.classList.add('activo');
+        }
+    });
+};
+
+window.addEventListener('scroll', mostrarScroll);
+window.addEventListener('load', mostrarScroll);
