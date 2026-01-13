@@ -108,3 +108,27 @@ const mostrarScroll = () => {
 
 window.addEventListener('scroll', mostrarScroll);
 window.addEventListener('load', mostrarScroll);
+
+/* ========================================= */
+/*   ANIMACIÓN AL SCROLL – CARRITOS UNO A UNO */
+/* ========================================= */
+const elementos = document.querySelectorAll('.scroll');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, index) => {
+    if (entry.isIntersecting) {
+
+      // Delay solo para los carritos
+      if (entry.target.classList.contains('card')) {
+        entry.target.style.transitionDelay = `${index * 0.15}s`;
+      }
+
+      entry.target.classList.add('show');
+      observer.unobserve(entry.target);
+    }
+  });
+}, {
+  threshold: 0.15
+});
+
+elementos.forEach(el => observer.observe(el));
